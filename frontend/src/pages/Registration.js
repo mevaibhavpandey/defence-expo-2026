@@ -63,7 +63,8 @@ const Registration = () => {
     if (files.video) submitData.append('video', files.video);
 
     try {
-      await axios.post('http://localhost:5000/api/registrations', submitData, {
+      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      await axios.post(`${API_URL}/api/registrations`, submitData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setMessage('Registration submitted successfully!');
