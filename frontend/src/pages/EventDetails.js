@@ -100,7 +100,7 @@ const EventDetails = () => {
                   <div className="bg-military-dark/50 p-4 rounded">
                     <h4 className="font-bold text-white mb-2">Round 2: Final Expo at BMSIT</h4>
                     <ul className="text-gray-300 space-y-1">
-                      <li>• Selected teams (approx. 30-50 teams)</li>
+                      <li>• Selected teams (approximately 50 teams)</li>
                       <li>• Live demonstration</li>
                       <li>• Evaluation by expert panel</li>
                     </ul>

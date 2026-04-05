@@ -11,12 +11,12 @@ const storage = multer.diskStorage({
 });
 
 const fileFilter = (req, file, cb) => {
-  const allowedTypes = /pdf|ppt|pptx|mp4|avi|mov/;
+  const allowedTypes = /pdf|ppt|pptx|mp4|avi|mov|jpg|jpeg|png/;
   const extname = allowedTypes.test(path.extname(file.originalname).toLowerCase());
   if (extname) {
     cb(null, true);
   } else {
-    cb(new Error('Only PPT and video files allowed'));
+    cb(new Error('Only PPT, video, and image files allowed'));
   }
 };
 

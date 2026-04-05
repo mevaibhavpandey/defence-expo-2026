@@ -230,6 +230,7 @@ const Registration = () => {
                     onChange={(e) => setFiles({ ...files, ppt: e.target.files[0] })}
                     className="w-full bg-military-dark/50 border border-military-accent/30 rounded px-4 py-2 text-white focus:outline-none focus:border-military-accent"
                   />
+                  <p className="text-gray-500 text-sm mt-1">Accepted: PPT, PPTX, PDF</p>
                 </div>
                 <div>
                   <label className="block text-gray-300 mb-2">Video Upload</label>
@@ -239,6 +240,7 @@ const Registration = () => {
                     onChange={(e) => setFiles({ ...files, video: e.target.files[0] })}
                     className="w-full bg-military-dark/50 border border-military-accent/30 rounded px-4 py-2 text-white focus:outline-none focus:border-military-accent"
                   />
+                  <p className="text-gray-500 text-sm mt-1">Accepted: MP4, AVI, MOV</p>
                 </div>
                 <div>
                   <label className="block text-gray-300 mb-2">Additional Links</label>

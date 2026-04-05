@@ -25,18 +25,57 @@ const About = () => {
           <div className="glow-card bg-military-green/20 backdrop-blur-sm p-8 rounded-lg border border-military-accent/20">
             <h2 className="text-3xl font-bold mb-4 text-white">ASTRA - Armed Squadron for Tactical Readiness and Awareness</h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
-              ASTRA is the official defence technology club of BMSIT, dedicated to fostering innovation in defence-related technologies. The club focuses on various cutting-edge domains including:
+              ASTRA is the official defence technology club of BMSIT, established to foster innovation and excellence in defence-related technologies. The club serves as a platform for students passionate about contributing to India's defence sector and national security.
             </p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              Our mission is to bridge the gap between academic learning and real-world defence applications, preparing students to become future innovators in the defence technology ecosystem.
+            </p>
+            
+            <h3 className="text-2xl font-bold mb-4 text-military-accent">Focus Areas</h3>
             <ul className="grid md:grid-cols-2 gap-4 mb-6">
-              {['Defence Technology', 'Robotics & UAVs', 'Artificial Intelligence & Machine Learning', 'Internet of Things (IoT)', 'Cybersecurity', 'Embedded Systems'].map((item, idx) => (
+              {[
+                'Defence Technology & Systems',
+                'Unmanned Aerial Vehicles (UAVs) & Drones',
+                'Artificial Intelligence & Machine Learning',
+                'Robotics & Autonomous Systems',
+                'Cybersecurity & Information Warfare',
+                'Embedded Systems & IoT',
+                'Surveillance & Reconnaissance Systems',
+                'Strategic Communication Systems'
+              ].map((item, idx) => (
                 <li key={idx} className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-military-accent rounded-full"></span>
                   <span className="text-gray-300">{item}</span>
                 </li>
               ))}
             </ul>
+            
+            <h3 className="text-2xl font-bold mb-4 text-military-accent">Our Objectives</h3>
+            <div className="space-y-3 mb-6">
+              <div className="bg-military-dark/50 p-4 rounded">
+                <p className="text-gray-300">
+                  <strong className="text-white">Innovation:</strong> Encourage students to develop cutting-edge solutions for defence challenges
+                </p>
+              </div>
+              <div className="bg-military-dark/50 p-4 rounded">
+                <p className="text-gray-300">
+                  <strong className="text-white">Industry Connect:</strong> Build strong relationships with DRDO, HAL, BEL, BDL, and other defence organizations
+                </p>
+              </div>
+              <div className="bg-military-dark/50 p-4 rounded">
+                <p className="text-gray-300">
+                  <strong className="text-white">Skill Development:</strong> Provide hands-on experience through workshops, projects, and competitions
+                </p>
+              </div>
+              <div className="bg-military-dark/50 p-4 rounded">
+                <p className="text-gray-300">
+                  <strong className="text-white">National Service:</strong> Contribute to India's vision of self-reliance in defence technology (Atmanirbhar Bharat)
+                </p>
+              </div>
+            </div>
+            
             <p className="text-gray-300 text-lg leading-relaxed">
-              ASTRA aims to bridge the gap between students, the defence sector, and real-world applications, preparing the next generation of defence technology innovators.
+              Through initiatives like the Defence Technology Expo, ASTRA provides students with opportunities to showcase their innovations, interact with industry experts, and contribute meaningfully to India's defence capabilities.
             </p>
           </div>
         </motion.div>
