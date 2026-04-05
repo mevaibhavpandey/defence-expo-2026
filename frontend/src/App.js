@@ -12,14 +12,14 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-military-dark relative">
-        {/* Futuristic military background layers */}
-        <div className="tactical-grid"></div>
+      <div className="min-h-screen bg-tactical-dark relative">
+        {/* Tactical Background Layers */}
+        <div className="tactical-bg"></div>
+        <div className="grid-overlay"></div>
         <div className="radar-sweep"></div>
-        <div className="camo-blobs"></div>
-        <div className="grain"></div>
+        <div className="scanline"></div>
         
-        {/* Main content */}
+        {/* Main Content */}
         <div className="relative z-10">
           <Navbar />
           <Routes>
